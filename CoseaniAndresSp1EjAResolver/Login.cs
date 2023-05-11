@@ -34,8 +34,12 @@ namespace CoseaniAndresSp1EjAResolver
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if (VartxtUsuario.Text = "Adm" & VarcboMódulo.Text = "ADM,COM,VTA" & 
-               MessageBox.Show= "Bienvenido.cs"
+            if (VartxtUsuario.ToString = "Adm" & VarcboMódulo.ToString = "ADM,COM,VTA" & VartxtContraseña.ToString = "@1a") ;
+
+
+               MessageBox.Show = "Bienvenido.cs";
+             
+            else  MessageBox.Show= "Usuario y/o Contraseña Incorrecta"
 
 
         }
