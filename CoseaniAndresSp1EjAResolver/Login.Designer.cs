@@ -75,17 +75,17 @@
             this.txtUsuario.Location = new System.Drawing.Point(238, 66);
             this.txtUsuario.MaxLength = 10;
             this.txtUsuario.Name = "txtUsuario";
-            this.txtUsuario.Size = new System.Drawing.Size(222, 30);
+            this.txtUsuario.Size = new System.Drawing.Size(231, 30);
             this.txtUsuario.TabIndex = 3;
             // 
             // txtContraseña
             // 
             this.txtContraseña.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtContraseña.Location = new System.Drawing.Point(238, 158);
+            this.txtContraseña.Location = new System.Drawing.Point(238, 155);
             this.txtContraseña.MaxLength = 10;
             this.txtContraseña.Name = "txtContraseña";
             this.txtContraseña.PasswordChar = '#';
-            this.txtContraseña.Size = new System.Drawing.Size(222, 30);
+            this.txtContraseña.Size = new System.Drawing.Size(231, 30);
             this.txtContraseña.TabIndex = 4;
             this.txtContraseña.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
@@ -101,7 +101,7 @@
             "VTA"});
             this.cboMódulo.Location = new System.Drawing.Point(238, 256);
             this.cboMódulo.Name = "cboMódulo";
-            this.cboMódulo.Size = new System.Drawing.Size(222, 33);
+            this.cboMódulo.Size = new System.Drawing.Size(231, 33);
             this.cboMódulo.TabIndex = 5;
             this.cboMódulo.SelectedIndexChanged += new System.EventHandler(this.cboMódulo_SelectedIndexChanged);
             // 

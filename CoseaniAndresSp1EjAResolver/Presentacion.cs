@@ -12,7 +12,7 @@ namespace CoseaniAndresSp1EjAResolver
 {
     public partial class Form1 : Form
     {
-        public Form1()
+        public Form1()  
         {
             InitializeComponent();
         }
