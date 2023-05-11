@@ -16,5 +16,16 @@ namespace CoseaniAndresSp1EjAResolver
         {
             InitializeComponent();
         }
+
+        private void Logo_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cmdInicioDeSesion_Click(object sender, EventArgs e)
+        {
+            Login VentanaLogin = new Login();
+            VentanaLogin.ShowDialog();
+        }
     }
 }
