@@ -37,9 +37,10 @@ namespace CoseaniAndresSp1EjAResolver
             if (VartxtUsuario.ToString = "Adm" & VarcboMódulo.ToString = "ADM,COM,VTA" & VartxtContraseña.ToString = "@1a") ;
 
 
-               MessageBox.Show = "Bienvenido.cs";
-             
-            else  MessageBox.Show= "Usuario y/o Contraseña Incorrecta"
+               MessageBox.Show = "Bienvenido";
+
+
+            else MessageBox.Show = "Usuario y/o Contraseña Incorrecta";
 
 
         }

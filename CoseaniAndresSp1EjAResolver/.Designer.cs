@@ -54,6 +54,7 @@
             this.Logo.Size = new System.Drawing.Size(68, 58);
             this.Logo.TabIndex = 1;
             this.Logo.TabStop = false;
+            this.Logo.WaitOnLoad = true;
             this.Logo.Click += new System.EventHandler(this.Logo_Click);
             // 
             // cmdInicioDeSesion
