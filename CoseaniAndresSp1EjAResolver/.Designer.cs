@@ -75,6 +75,7 @@
             this.cmdCerrar.TabIndex = 3;
             this.cmdCerrar.Text = "Cerrar";
             this.cmdCerrar.UseVisualStyleBackColor = true;
+            this.cmdCerrar.Click += new System.EventHandler(this.cmdCerrar_Click);
             // 
             // Form1
             // 

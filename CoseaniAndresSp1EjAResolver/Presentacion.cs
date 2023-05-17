@@ -24,8 +24,15 @@ namespace CoseaniAndresSp1EjAResolver
 
         private void cmdInicioDeSesion_Click(object sender, EventArgs e)
         {
+            this.Hide();
             Login VentanaLogin = new Login();
-            VentanaLogin.ShowDialog();
+            VentanaLogin.Show();
+               
+        }
+
+        private void cmdCerrar_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

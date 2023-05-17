@@ -12,11 +12,12 @@ namespace CoseaniAndresSp1EjAResolver
 {
     public partial class Login : Form
     {  //declaracion de variables
-        String VartxtUsuario; 
-       String VartxtContraseña;
-        String VarcboMódulo;
+        string VartxtUsuario;
+        string VartxtContraseña;
+        string VarcboModulo;
+        int Varintentos=0; 
 
-   
+
 
 
 
@@ -34,16 +35,46 @@ namespace CoseaniAndresSp1EjAResolver
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if (VartxtUsuario.ToString = "Adm" & VarcboMódulo.ToString = "ADM,COM,VTA" & VartxtContraseña.ToString = "@1a") ;
+            string Usuario = txtUsuario.Text;
+            string Contrasenia = txtContraseña.Text;
+            string Modulo = cboMódulo.SelectedItem.ToString();
+            
 
 
-               MessageBox.Show = "Bienvenido";
 
 
-            else MessageBox.Show = "Usuario y/o Contraseña Incorrecta";
+
+            if ((Usuario == "Adm" && Contrasenia == "@1a") && (Modulo == "ADM" || Modulo == "COM" || Modulo == "VTA") ||
+                (Usuario == "Jhon" && Contrasenia == "*2b") && (Modulo == "SIST") ||
+                (Usuario == "Ceci" && Contrasenia == "*@3c") && (Modulo == "ADM" || Modulo == "VTA") ||
+                (Usuario == "God" && Contrasenia == "*@#4d"))
+
+
+
+
+            {
+                this.Hide();
+                Bienvenido frm = new Bienvenido();
+                frm.Show();
+            }
+
+            else
+            {
+               
+                MessageBox.Show("Usuario y/o Contraseña Incorrecta");
+
+                Varintentos++;
+                if (Varintentos == 3)
+                { 
+                    this.Close();   
+                }
+            }
+
 
 
         }
+
+    
 
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
@@ -51,6 +82,12 @@ namespace CoseaniAndresSp1EjAResolver
 
 
 
+
+        }
+
+        private void cmdCancelar_Click(object sender, EventArgs e)
+        {
+            this.Close();
 
         }
     }
